@@ -35,3 +35,24 @@ console.log(emp2.describe());
 console.log(mgr1.describe());
 console.log(mgr2.describe());
 
+// Step 5: Create a class called Company with a property employees (an array). Add methods: addEmployee(employee) – adds an employee to the array.
+
+class Company {
+    constructor() {
+        this.employees = [];
+    }
+
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+
+    listEmployees() {
+        console.log("Company Employees:");
+        this.employees.forEach(emp => {
+            console.log(emp.describe());
+        });
+    }
+}
+
+
+
